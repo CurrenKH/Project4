@@ -1,7 +1,7 @@
 ﻿
 namespace DBMovieManager_CurrenandMatthew
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -647,7 +647,7 @@ namespace DBMovieManager_CurrenandMatthew
             this.label3.TabIndex = 84;
             this.label3.Text = "Movie Info";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -666,8 +666,8 @@ namespace DBMovieManager_CurrenandMatthew
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.memberListBox);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainForm";
+            this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.movieImageBox)).EndInit();
             this.panel4.ResumeLayout(false);
