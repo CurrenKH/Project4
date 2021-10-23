@@ -143,6 +143,7 @@ namespace DBMovieManager_CurrenandMatthew
 
                     currentMovie.Genres = LoadMovieGenres(currentMovie.ID);
 
+                    //  If image path is empty
                     if (dataReader.GetString(5) == "")
                     {
                         currentMovie.ImagePath = @"images/noimage.jpg";
@@ -158,11 +159,9 @@ namespace DBMovieManager_CurrenandMatthew
                     }
 
                     Console.WriteLine("image = " + currentMovie.ImagePath);
-
-
                     Console.WriteLine("Title = " + currentMovie.Title);
 
-                    //  Movies.Add(currentMovie);
+                    Movies.Add(currentMovie);
 
                 }
             }
@@ -315,13 +314,11 @@ namespace DBMovieManager_CurrenandMatthew
             movieListView.Columns.Add(columnHeader1);
             movieListView.View = View.Details;
 
-
             ColumnHeader columnHeader2 = new ColumnHeader();
             columnHeader2.Text = "Year";
             columnHeader2.TextAlign = HorizontalAlignment.Left;
             columnHeader2.Width = 60;
             movieListView.Columns.Add(columnHeader2);
-            //listView1.View = View.Details;
 
             ColumnHeader columnHeader3 = new ColumnHeader();
             columnHeader3.Text = "Length";
