@@ -29,6 +29,7 @@ namespace DBMovieManager_CurrenandMatthew
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label12 = new System.Windows.Forms.Label();
             this.genreListBox = new System.Windows.Forms.ListBox();
             this.movieListView = new System.Windows.Forms.ListView();
@@ -81,6 +82,7 @@ namespace DBMovieManager_CurrenandMatthew
             this.addMovieInfoButton = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.movieImageList = new System.Windows.Forms.ImageList(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.movieImageBox)).BeginInit();
             this.panel4.SuspendLayout();
@@ -647,6 +649,12 @@ namespace DBMovieManager_CurrenandMatthew
             this.label3.TabIndex = 84;
             this.label3.Text = "Movie Info";
             // 
+            // movieImageList
+            // 
+            this.movieImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.movieImageList.ImageSize = new System.Drawing.Size(16, 16);
+            this.movieImageList.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -668,6 +676,7 @@ namespace DBMovieManager_CurrenandMatthew
             this.Controls.Add(this.memberListBox);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.movieImageBox)).EndInit();
             this.panel4.ResumeLayout(false);
@@ -735,6 +744,7 @@ namespace DBMovieManager_CurrenandMatthew
         private System.Windows.Forms.Button addMovieInfoButton;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ImageList movieImageList;
     }
 }
 
