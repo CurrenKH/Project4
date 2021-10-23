@@ -8,7 +8,7 @@ namespace DBMovieManager_CurrenandMatthew
 {
     class Movie
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string Title { get; set; }
         public int Year { get; set; }
         public int Length { get; set; }
@@ -19,7 +19,7 @@ namespace DBMovieManager_CurrenandMatthew
         public List<Member> Members { get; set; }
         public Movie()
         {
-            Id = 0;
+            ID = 0;
             Title = "";
             Year = 0;
             Length = 0;

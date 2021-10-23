@@ -8,7 +8,7 @@ namespace DBMovieManager_CurrenandMatthew
 {
     class Member
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public DateTime DOB { get; set; }
         public int Type { get; set; }
@@ -16,7 +16,7 @@ namespace DBMovieManager_CurrenandMatthew
 
         public Member()
         {
-            Id = 0;
+            ID = 0;
             Name = "";
             DOB = new DateTime();
             Type = 0;
